@@ -26,6 +26,8 @@ urlJoin('foo', 'bar?queryString', { trailingSlash: true }); // /foo/bar/?querySt
 
 // With query string as an object
 urlJoin('foo', { query: { biz: 'buz', foo: 'bar' } }); // /foo?biz=buz&foo=bar
+urlJoin('foo', { query: { biz: 'buz', foo: 'bar', isFoo: true } }); // /foo?biz=buz&foo=bar&isFoo=true
+urlJoin('foo', { query: { biz: 'buz', foo: 'bar', isBar: false } }); // /foo?biz=buz&foo=bar&isBar=false
 
 // With both query string as an url part and an object
 urlJoin('foo', 'bar?queryString', { query: { biz: 'buz', foo: 'bar' } });

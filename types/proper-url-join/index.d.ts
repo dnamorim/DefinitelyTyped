@@ -30,7 +30,7 @@ export interface Options {
      * It will be merged with the query string in the url, if it exists.
      */
     query?: {
-        [k: string]: string|number|ReadonlyArray<string|number>;
+        [k: string]: string|number|boolean|ReadonlyArray<string|number|boolean>;
     } | undefined;
     /**
      * [query-string](https://github.com/sindresorhus/query-string#stringifyobject-options) singify method options to be considered when stringifying the query.
